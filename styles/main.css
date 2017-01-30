@@ -238,7 +238,32 @@ footer p {
 	width: 100%;
 }
 
+.cennik h3 {
+	padding: 10px;
+	border-bottom: 3px solid #FA339A;
+	cursor: pointer;
+}
+
+.cennik h3::after {
+	background-image: url(../img/arrow.jpg);
+	background-size: contain;
+	content: '';
+	float: right;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+}
+
+.cennik h3.open::after {
+	transform: rotate(90deg);
+}
+
+.hidden {
+	display: none;
+}
+
 .cennik td {
+	padding: 10px;
 	width: 50%;
 }
 

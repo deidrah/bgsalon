@@ -4,6 +4,11 @@ $(document).ready(function(){
 		autoplay: true,
 	});
 
+	$(".rozwin").click (function(){
+		$(".line").toggleClass("hidden");
+		$(this).toggleClass("open");
+	});
+
 	var gdansk = {lat: 54.349853, lng: 18.647186};
 	var mapa = new google.maps.Map(document.getElementById('col-2'), {
 		zoom: 16,
