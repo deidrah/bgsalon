@@ -160,8 +160,17 @@ li {
 	background-image: url(../img/style.svg);
 }
 
+#photos {
+	padding-left: 10px;
+}
+
+#photos li {
+	width: 25%;
+	margin-right: 0;
+}
+
 .photo {
-	width: 250px;
+	width: 80%;
 	height: 150px;
 	margin: 10px auto;
 	border: 5px solid #FA339A;
@@ -191,6 +200,14 @@ li {
 
 #photo6 {
 	background-image: url(../img/photo6-min.jpg)
+}
+
+#photo7 {
+	background-image: url(../img/photo7-min.jpg)
+}
+
+#photo8 {
+	background-image: url(../img/photo8-min.jpg)
 }
 
 .client {
