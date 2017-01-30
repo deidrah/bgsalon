@@ -5,7 +5,7 @@ $(document).ready(function(){
 	});
 
 	$(".rozwin").click (function(){
-		$(".line").toggleClass("hidden");
+		$(this).parent().find(".line").toggleClass("hidden");
 		$(this).toggleClass("open");
 	});
 
