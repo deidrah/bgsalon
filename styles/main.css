@@ -328,21 +328,23 @@ textarea {
 
 #mapa {
 	width: 80%;
-	height: 50vh;
+	height: 40vh;
 	margin: 0 auto;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 #col-1 {
 	width: 30%;
-	height: 50vh;
+	height: 40vh;
 	float: left;
 	padding-top: 50px;
 	margin-right: 50px;
 }
 
 #col-2 {
-	width: 50%;
-	height:50vh; 
+	width: calc(50% + 60px);
+	height:40vh; 
 	border: 1px solid black;
 	position: relative;
 	overflow: hidden;
@@ -351,16 +353,41 @@ textarea {
 .contact-icons {
 	background-repeat: no-repeat;
 	height: 100px;
+	float: right;
+	min-width: 300px;
+	font-size: 22px;
 }
 
-#icon-contact-1 {
+#icon-contact-1::before {
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-top: -10px;
+	content: '';
 	background-image: url(../img/phone.svg);
 }
 
-#icon-contact-2 {
+#icon-contact-2::before {
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-top: -10px;
+	content: '';
+	content: '';
 	background-image: url(../img/mail.svg);
 }
 
-#icon-contact-3 {
+#icon-contact-3::before {
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	width: 50px;
+	height: 50px;
+	content: '';
+	content: '';
 	background-image: url(../img/address.svg);
 }

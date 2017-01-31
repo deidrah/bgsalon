@@ -18,5 +18,6 @@ $(document).ready(function(){
 	var marker = new google.maps.Marker({
 		position: gdansk,
 		map: mapa,
+		icon: 'img/map.png',
 	});
 });
