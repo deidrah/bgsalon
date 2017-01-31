@@ -177,7 +177,7 @@ li {
 
 .photo {
 	width: 80%;
-	height: 150px;
+	height: auto;
 	margin: 10px auto;
 	border: 5px solid #FA339A;
 	background-size: cover;
