@@ -15,13 +15,14 @@ body {
 }
 
 #logo {
-	background: url("") no-repeat;
-	width: 117px;
-	height: 37px;
+	background: url("../img/logo.png") no-repeat;
+	width: 232px;
+	height: 65px;
 	display: block;
+	z-index: 2;
 	text-indent: -1000em;
 	float: left;
-	margin-top: 60px;
+	margin-top: 30px;
 
 }
 
