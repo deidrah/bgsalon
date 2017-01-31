@@ -183,36 +183,6 @@ li {
 	background-position: center;
 }
 
-
-
-#photo2 {
-	background-image: url(../img/photo2-min.jpg)
-}
-
-#photo3 {
-	background-image: url(../img/photo3-min.jpg)
-}
-
-#photo4 {
-	background-image: url(../img/photo4-min.jpg)
-}
-
-#photo5 {
-	background-image: url(../img/photo5-min.jpg)
-}
-
-#photo6 {
-	background-image: url(../img/photo6-min.jpg)
-}
-
-#photo7 {
-	background-image: url(../img/photo7-min.jpg)
-}
-
-#photo8 {
-	background-image: url(../img/photo8-min.jpg)
-}
-
 .client {
 	width: 150px;
 	height: 150px;
