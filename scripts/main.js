@@ -9,6 +9,9 @@ $(document).ready(function(){
 		$(this).toggleClass("open");
 	});
 
+	
+	$(".fancybox").fancybox();
+
 	var gdansk = {lat: 54.349853, lng: 18.647186};
 	var mapa = new google.maps.Map(document.getElementById('col-2'), {
 		zoom: 16,
