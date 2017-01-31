@@ -316,8 +316,8 @@ textarea {
 }
 
 #col-2 {
-	width: calc(50% + 60px);
-	height:40vh; 
+	width: 60%;
+	height: 40vh; 
 	border: 1px solid black;
 	position: relative;
 	overflow: hidden;
