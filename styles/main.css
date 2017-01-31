@@ -55,6 +55,11 @@ body {
 	margin: 0 auto;
 }
 
+section {
+	width: 60%;
+	margin: 0 auto;
+}
+
 #headline {
 	font-size: 24px;
 	text-align: center;
@@ -88,7 +93,7 @@ body {
 }
 
 .slide {
-	height: 80vh;
+	height: 60vh;
 	background-size: cover;
 	background-position: center;
 }
@@ -106,7 +111,7 @@ body {
 }
 
 main {
-	top: 80vh;
+	top: 60vh;
 	position: absolute;
 	width: 100%;
 	margin-top: 20px;

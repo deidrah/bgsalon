@@ -19,5 +19,5 @@ $(document).ready(function(){
 		position: gdansk,
 		map: mapa,
 		icon: 'img/map.png',
-	});
+	}); 
 });
