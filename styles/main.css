@@ -34,6 +34,7 @@ body {
 
 #menu a {
 	color: #fff;
+	font-size: 1.2rem;
 	border-bottom: 5px solid #6AE83A;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -65,7 +66,6 @@ section {
 	font-size: 2rem;
 	text-shadow: 4px 2px 8px rgba(34, 34, 34, 1);
 	text-align: center;
-	font-weight: bold;
 	color: #fff;
 	margin-top: 10%;
 }
@@ -92,7 +92,9 @@ section {
 	position: absolute !important;
 	top: 0;
 	z-index: -1 !important;
-	border-bottom: 5px solid #222;
+	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 }
 
 .owl-dots {
@@ -111,6 +113,10 @@ main {
 main section {
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 1.8rem;
 }
 
 h2:after {
@@ -141,6 +147,9 @@ li {
 	margin: 0 auto;
 	border: 5px solid #FA339A;
 	border-radius: 50%;
+	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 }
 
 #icon1 {
@@ -171,6 +180,14 @@ li {
 	border: 5px solid #FA339A;
 	background-size: cover;
 	background-position: center;
+	transition: .3s;
+	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+}
+
+.photo:hover {
+	border: 5px solid #6AE83A;
 }
 
 .client {
@@ -181,6 +198,10 @@ li {
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
+	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+
 }
 
 #client1 {
@@ -193,6 +214,12 @@ li {
 
 #client3 {
 	background-image: url(../img/client3.jpg)
+}
+
+.shadow {
+	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 }
 
 footer {
