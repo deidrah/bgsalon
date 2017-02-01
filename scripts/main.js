@@ -12,8 +12,11 @@ $(document).ready(function(){
 	
 	$(".fancybox").fancybox();
 
+	var map = document.getElementById('col-2');
+
+	if (map) {
 	var gdansk = {lat: 54.349853, lng: 18.647186};
-	var mapa = new google.maps.Map(document.getElementById('col-2'), {
+	var mapa = new google.maps.Map(map, {
 		zoom: 16,
 		center: gdansk
 	});
@@ -23,4 +26,5 @@ $(document).ready(function(){
 		map: mapa,
 		icon: 'img/map.png',
 	}); 
+}
 });
