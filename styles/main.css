@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 /* ogólne, strona główna */
 
@@ -61,6 +61,11 @@ section {
 	width: 60%;
 	margin: 0 auto;
 }
+
+h2, h1, h3 {
+font-weight: 500;
+}
+
 
 #headline {
 	font-size: 2rem;
