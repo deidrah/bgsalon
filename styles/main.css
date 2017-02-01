@@ -82,18 +82,6 @@ section {
 	background-image: url("../img/slide3.jpg");
 }
 
-#slide4 {
-	background-image: url("../img/slide4.jpg");
-}
-
-#slide5 {
-	background-image: url("../img/slide5.jpg");
-}
-
-#slide6 {
-	background-image: url("../img/slide6.jpg");
-}
-
 .slide {
 	height: 60vh;
 	background-size: cover;
