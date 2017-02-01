@@ -386,3 +386,10 @@ textarea {
 	content: '';
 	background-image: url(../img/address.svg);
 }
+
+@media screen and (max-width: 1100px) {
+	li, #photos li {
+		display: block;
+		width: 100%;
+	}
+}
