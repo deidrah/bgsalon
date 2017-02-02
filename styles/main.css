@@ -140,6 +140,7 @@ h2:after {
 ul {
 	overflow: hidden;
 	margin-top: 50px;
+	padding: 0;
 }
 
 li {
