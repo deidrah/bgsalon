@@ -282,6 +282,7 @@ footer p {
 	width: 25px;
 	height: 25px;
 	background-repeat: no-repeat;
+	transition: .3s;
 }
 
 .cennik h3.open::after {
@@ -449,6 +450,10 @@ textarea {
 
 	#menu a {
 		font-size: 0.8rem;
+	}
+
+	.contact-icons {
+		font-size: 1em;
 	}
 
 }
