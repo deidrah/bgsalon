@@ -43,6 +43,7 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 5px 10px;
+	-webkit-transition: .3s;
 	transition: .3s;
 }
 
@@ -101,8 +102,6 @@ font-weight: 500;
 	position: absolute !important;
 	top: 0;
 	z-index: -1 !important;
-	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 }
 
@@ -170,8 +169,6 @@ li p {
 	margin: 0 auto;
 	border: 5px solid #FA339A;
 	border-radius: 50%;
-	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 }
 
@@ -203,9 +200,8 @@ li p {
 	border: 5px solid #FA339A;
 	background-size: cover;
 	background-position: center;
+	-webkit-transition: .3s;
 	transition: .3s;
-	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 }
 
@@ -221,8 +217,6 @@ li p {
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
-	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 
 }
@@ -240,8 +234,6 @@ li p {
 }
 
 .shadow {
-	-webkit-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 	box-shadow: 0px 4px 20px -1px rgba(0,0,0,0.5);
 }
 
@@ -282,10 +274,12 @@ footer p {
 	width: 25px;
 	height: 25px;
 	background-repeat: no-repeat;
+	-webkit-transition: .3s;
 	transition: .3s;
 }
 
 .cennik h3.open::after {
+	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
 
@@ -317,7 +311,19 @@ form {
 	font-size: 22px;
 	border: 3px solid #FA339A;
 	border-radius: 3px;
+    transition: .3s;
 }
+
+
+.inputy1:active, .inputy1:hover, textarea:hover, textarea:active {
+    background-color: rgba(250,51,154,0.7);
+}
+    
+
+.inputy1:active, .inputy1:hover, textarea:hover, textarea:active, .inputy1:hover::placeholder, textarea:hover::placeholder {
+    color: #fff;
+}
+
 
 textarea {
 	width: 100%;
@@ -326,6 +332,7 @@ textarea {
 	resize: none;
 	border: 3px solid #FA339A;
 	border-radius: 3px;
+    transition: .3s;
 }
 
 #send {
@@ -338,6 +345,12 @@ textarea {
 	background-color: #FA339A;
 	border: 3px solid #FA339A;
 	border-radius: 3px;
+    transition: .3s;
+}
+
+#send:hover, #send:active {
+    background-color: #fff;
+    color:#FA339A;
 }
 
 #mapa {
@@ -404,6 +417,54 @@ textarea {
 	background-image: url(../img/address.svg);
 }
 
+/* Media queries */
+
+@media screen and (max-width: 450px) {
+    #logo {
+        display: none;
+    }
+    
+    #menu {
+        float: none;
+        margin: 50px auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+	#headline {
+		margin-top: 20%;
+		font-size: 1.5rem;
+	}
+
+	.container {
+		width: 100%;
+	}
+    
+    section {
+        width: 90%;
+    }
+	
+	#logo {
+		background: url("../img/logo-mobile.png") no-repeat;
+		width: 20%;
+	}
+
+	#menu a {
+		font-size: 0.8rem;
+	}
+
+	.contact-icons {
+		font-size: 1em;
+	}
+    
+    .inputy1 {
+        width: 100%;
+    }
+
+}
+
+
 @media screen and (max-width: 1100px) {
 	li, #photos li {
 		display: block;
@@ -433,27 +494,3 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 680px) {
-	#headline {
-		margin-top: 20%;
-		font-size: 1.5rem;
-	}
-
-	.container {
-		width: 100%;
-	}
-	
-	#logo {
-		background: url("../img/logo-mobile.png") no-repeat;
-		width: 20%;
-	}
-
-	#menu a {
-		font-size: 0.8rem;
-	}
-
-	.contact-icons {
-		font-size: 1em;
-	}
-
-}
